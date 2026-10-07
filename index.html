@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- 1. Essential Character Set & Viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- 2. Page Title & Meta Description -->
+    <title>Yogesh Pal | Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Yogesh Pal, a Full Stack Developer specializing in .Net, Angular, React, Node.js, and modern web applications. Check out my projects and skills."
+    />
+    <meta
+      name="keywords"
+      content="Developer, Frontend, Backend, Full Stack, Portfolio, .Net, Angular, React, Node.js"
+    />
+    <meta name="author" content="Yogesh Pal" />
+    <link rel="canonical" href="https://theyogeshpal.in/" />
+
+    <!-- 3. Open Graph (LinkedIn, WhatsApp, Facebook Preview ke liye) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://theyogeshpal.in/" />
+    <meta property="og:title" content="Yogesh Pal | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Explore my personal projects, tech stack, and experience."
+    />
+    <meta
+      property="og:image"
+      content="https://theyogeshpal.in/assets/og-preview.png"
+    />
+
+    <!-- 4. Twitter Cards (X / Twitter Preview ke liye) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@aapka_twitter_handle" />
+    <meta name="twitter:title" content="Yogesh Pal | Full Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Explore my personal projects, tech stack, and experience."
+    />
+    <meta
+      name="twitter:image"
+      content="https://theyogeshpal.in/assets/og-preview.png"
+    />
+
+    <!-- 5. Favicon & App Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- 6. Theme Color (Mobile browser status bar color) -->
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- 7. Google Fonts / External Stylesheets (Preconnect ke saath) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 8. CSS Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div id="loader">
+      <div class="simple-spinner"></div><p style="color: white; margin-top: 15px; font-family: var(--navbar-font); letter-spacing: 0.1em; font-weight: bold;">LOADING...</p>
+    </div>
+
+    <!-- navbar -->
+                    <nav id="navbar">
+      <a href="index.html" style="text-decoration:none;"><img src="./assets/logo.png" alt="logo" /></a>
+      <ul id="nav-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#experiance">Experience</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a id="talk" href="index.html#contact">
+        <i class="fa-solid fa-comment"></i>
+        Talk
+      </a>
+      <button id="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- hero section -->
+    <div id="hero">
+      <div id="left-hero">
+        <span>1.5+ years of experience</span>
+        <h1 id="hero-name">Yogesh Pal</h1>
+        <h2>Full-stack software engineer</h2>
+        <p id="hero-desc">
+          Bringing your ideas to life with clean, efficient, and scalable code. Whether it's building robust web apps, optimizing backend performance, or solving complex technical challenges.
+        </p>
+        <p></p>
+        
+        <button>View all work</button>
+      </div>
+      <div id="right-hero">
+        <div id="abcd"></div>
+      </div>
+    </div>
+
+    <!-- selected work -->
+    <div id="work">
+      <p class="work-heading">Selected work</p>
+      <div id="work-container">
+        <!-- proj 1 -->
+                <div id="work1" class="work" onclick="window.location.href='project-detail.html?id=safedrivetag'" style="cursor: pointer;">
+          <div>
+            <span class="work-heading">SELECTED WORK</span>
+            <h4>SafeDriveTag</h4>
+            <p>
+              An e-commerce platform for smart QR emergency contact safety tags.
+            </p>
+            <div>
+              <span>React</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+          <img src="./assets/image.png" />
+        </div>
+        <!-- proj 2 -->
+                <div id="work2" class="work" onclick="window.location.href='project-detail.html?id=syncattend'" style="cursor: pointer;">
+          <div>
+            <span class="work-heading">SELECTED WORK</span>
+            <h4>SyncAttend</h4>
+            <p>
+              A comprehensive Attendance management application mapping location and staff analytics.
+            </p>
+            <div>
+              <span>Flutter</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+          <img src="./assets/image.png" />
+        </div>
+        <!-- proj 3 -->
+        <div id="work3" class="work">
+          <div>
+            <span class="work-heading">SELECTED WORK</span>
+            <h4>Evvy</h4>
+            <p>
+              A full-stack event operations platform for managing guest lists,
+              seating, payments, invitations, and on-site check-in in one
+              workflow.
+            </p>
+            <div>
+              <span>Web</span>
+              <span>API</span>
+            </div>
+          </div>
+          <img src="./assets/image.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- experiance Section -->
+    <div id="experiance">
+      <div id="first-experiance">
+        <div id="left-first-exp">
+          <p class="work-heading">Experience</p>
+        </div>
+        <div id="right-first-exp">
+          <h2>Full stack, end to end.</h2>
+          <p>
+            I build products across responsive interfaces and mobile experiences
+            to resilient APIs, cloud services, and systems behind them.
+          </p>
+        </div>
+      </div>
+
+      <div id="second-experiance">
+        <div id="left-second-exp">
+          <p>July 2026 – Present</p>
+          <p>Jan 2026 – July 2026</p>
+          <span class="bullet bullet1">&nbsp;</span>
+          <span class="bullet bullet2">&nbsp;</span>
+        </div>
+        <hr id="hr" />
+        <div id="right-second-exp">
+          <p class="mobile-date">July 2026 - Present</p>
+          <div class="exp">
+            <span class="work-heading">Digicoders Technologies Pvt. Ltd.</span>
+            <h5>Full Stack Engineer</h5>
+            <span>Lucknow</span>
+            <p>
+              Versatile Full Stack Developer capable of delivering end-to-end digital web products from backend database schema design to responsive UI implementation. Combines robust backend APIs (ASP.NET Core / Node.js) with dynamic frontend frameworks like React and TypeScript. Specialized in building fast, SEO-friendly applications using Server-Side Rendering (SSR) and responsive styling.
+            </p>
+            <span class="work-heading">Tech stack</span>
+            <div>
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>ASP.NET Core API</span>
+              <span>Tailwind CSS</span>
+              <span>REST APIs</span>
+            </div>
+          </div>
+          <p class="mobile-date">Jan 2026 - July 2026</p>
+          <div class="exp">
+            <span class="work-heading">Digicoders Technologies Pvt. Ltd.</span>
+            <h5>.NET Developer</h5>
+            <span>Lucknow</span>
+            <p>
+              Dedicated .NET Developer with expertise in building secure, scalable backend architectures and robust web services. Proficient in C#, ASP.NET Core MVC, Entity Framework Core, and designing RESTful APIs. 
+
+            </p>
+            <span class="work-heading">Tech stack</span>
+            <div>
+              <span>C#</span>
+              <span>ASP.NET Core MVC</span>
+              <span>REST APIs</span>
+              <span>EF Core</span>
+              <span>SQL Server</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+      <div id="first-experiance">
+        <div id="left-first-exp">
+          <p class="work-heading">About Me</p>
+        </div>
+        <div id="right-first-exp">
+          <h2>Clear thinking, dependable delivery.</h2>
+        </div>
+      </div>
+
+      <div id="second-abt">
+        <div id="left-second-abt">
+          <div>
+            <img src="./assets/Yogesh-Pal.jpeg" alt="" />
+            <div>
+              <p>
+                <b>YOGESH</b>
+                <span>Full-stack engineer</span>
+              </p>
+              <p>TYP / 001</p>
+            </div>
+          </div>
+        </div>
+        <div id="right-second-abt">
+          <p>
+            Hello! I'm a dedicated Full Stack Developer and CSE student with a passion for building high-performance web applications. My expertise spans across the entire development lifecycle, from architecting robust backends using ASP.NET Core and Express JS Stack to crafting modern, responsive frontends with React.js, Angular, Tailwind CSS, and Bootstrap.
+          </p>
+          <p>
+            I specialize in creating seamless user experiences powered by efficient Rest APIs, SQL databases (MSSQL & MySQL) and NoSQL database (MongoDb). My technical toolkit is further enhanced by advanced animation libraries like GSAP and AOS, ensuring every project I deliver is not just functional, but visually exceptional.
+          </p>
+          <p>
+            Awarded the "Star Performance" honor at Digicoders Technologies, I bring a proven track record of dedication, logical problem-solving, and rapid skill acquisition to every challenge. I thrive on turning complex ideas into scalable, production-ready reality.
+          </p>
+
+          <h2>How I work</h2>
+          <div id="working-card-container">
+            <div class="card-working">
+              <h5>Own the full path</h5>
+              <p>
+                I connect interface, backend, data, and delivery concerns to
+                build complete solutions.
+              </p>
+            </div>
+            <div class="card-working">
+              <h5>Make complexity clear</h5>
+              <p>
+                I turn technical constraints into practical, well-documented decisions.
+              </p>
+            </div>
+            <div class="card-working">
+              <h5>Build for confidence</h5>
+              <p>
+                I use testing, observability, and performance-minded engineering to make features dependable.
+              </p>
+            </div>
+            <a href="about.html" style="display: inline-block; margin-top: 40px; background-color: #868BE3; color: white; text-decoration: none; padding: 12px 25px; border-radius: 20px; font-weight: 600; font-size: 16px; box-shadow: inset -3px -2px 5px #575e99; transition: all 0.2s ease;">Read Full Story &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- ===== SERVICES SECTION ===== -->
+    <div id="services" style="padding: 50px; color: white; font-family: var(--primary-font);">
+      <p class="work-heading">My Services</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 40px;">
+        <div class="service-card" style="flex: 1; min-width: 300px; background-color: var(--secondary-color); padding: 40px; border-radius: 30px; box-shadow: inset 5px 5px 5px #282B37, inset -5px -5px 5px #171824; border: 1px solid #282B37; transition: transform 0.3s ease;">
+          <i class="fa-solid fa-code" style="font-size: 2rem; color: #868BE3; margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Web Development</h3>
+          <p style="color: #9394a7; line-height: 1.6;">Full-stack solutions using React, Angular, .NET Core, and Node.js to build scalable and high-performance web applications tailored to your business.</p>
+        </div>
+        <div class="service-card" style="flex: 1; min-width: 300px; background-color: var(--secondary-color); padding: 40px; border-radius: 30px; box-shadow: inset 5px 5px 5px #282B37, inset -5px -5px 5px #171824; border: 1px solid #282B37; transition: transform 0.3s ease;">
+          <i class="fa-solid fa-server" style="font-size: 2rem; color: #868BE3; margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Backend & APIs</h3>
+          <p style="color: #9394a7; line-height: 1.6;">Robust architecture and RESTful API development with MSSQL/MongoDB databases, focusing on security, speed, and seamless integration.</p>
+        </div>
+        <div class="service-card" style="flex: 1; min-width: 300px; background-color: var(--secondary-color); padding: 40px; border-radius: 30px; box-shadow: inset 5px 5px 5px #282B37, inset -5px -5px 5px #171824; border: 1px solid #282B37; transition: transform 0.3s ease;">
+          <i class="fa-solid fa-mobile-screen" style="font-size: 2rem; color: #868BE3; margin-bottom: 20px;"></i>
+          <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Responsive UI/UX</h3>
+          <p style="color: #9394a7; line-height: 1.6;">Crafting modern, mobile-first frontend experiences using Tailwind CSS, Bootstrap, and advanced GSAP animations for maximum engagement.</p>
+        </div>
+      </div>
+      <div style="margin-top: 40px;">
+        <a href="services.html" style="display: inline-block; background-color: #868BE3; color: white; text-decoration: none; padding: 12px 25px; border-radius: 20px; font-weight: 600; font-size: 16px; box-shadow: inset -3px -2px 5px #575e99; transition: all 0.2s ease;">Explore All Services &rarr;</a>
+      </div>
+    </div>
+
+    <!-- contact section -->
+    <div id="contact">
+      <p class="work-heading">Contact</p>
+      <div id="contact-container">
+        <div id="contact-left">
+          <h2>Let's build something awesome together!</h2>
+          <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+          <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> theyogeshpal@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> India</p>
+          </div>
+        </div>
+        <div id="contact-right">
+          <form id="contact-form">
+            <div class="input-group">
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="footer">
+      <div id="footer-top">
+        <!-- Left: Get in touch -->
+        <div id="footer-left">
+          <span class="footer-label">GET IN TOUCH</span>
+          <a href="mailto:yogeshpal.dev@gmail.com" id="footer-email">theyogeshpal@gmail.com</a>
+        </div>
+
+        <!-- Center: Explore -->
+        <div class="footer-col">
+          <span class="footer-label">EXPLORE</span>
+          <ul class="footer-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#" id="back-to-top">Back to top <i class="fa-solid fa-arrow-up" style="margin-left:5px;"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Elsewhere -->
+        <div class="footer-col">
+          <span class="footer-label">ELSEWHERE</span>
+          <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/in/theyogeshpal/" target="_blank">LinkedIn &#8599;</a></li>
+            <li><a href="https://github.com/theyogeshpal" target="_blank">GitHub &#8599;</a></li>
+            <li><a href="https://instagram.com/the_yogeshpal" target="_blank">Instagram &#8599;</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="footer-bottom">
+        <span>&copy; 2026 Yogesh Pal</span>
+        <span style="color: #6c6d80; font-family: monospace; font-size: 0.85rem;">v3.0</span>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>    <!-- Floating Contact Buttons -->
+    <div class="floating-cta">
+      <a href="https://wa.me/917817095043" target="_blank" class="cta-btn whatsapp-cta" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="tel:+917817095043" class="cta-btn call-cta" aria-label="Call">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // ===== PAGE LOADER ANIMATION =====
+    (function () {
+            const loader = document.getElementById('loader');
+      const tl = gsap.timeline();
+
+      // Split the hero name into span elements for letter-by-letter animation
+      const heroNameEl = document.getElementById("hero-name");
+      const nameText = heroNameEl.innerText;
+      heroNameEl.innerHTML = "";
+      nameText.split("").forEach(char => {
+        if(char === " ") {
+            heroNameEl.innerHTML += "&nbsp;";
+        } else {
+            const span = document.createElement("span");
+            span.innerText = char;
+            span.className = "bounce-letter";
+            span.style.display = "inline-block";
+            span.style.opacity = "0"; // Start hidden
+            heroNameEl.appendChild(span);
+        }
+      });
+
+      // 1. Fade out loader ? reveal website
+      tl.to(loader, {
+        opacity: 0,
+        duration: 0.6,
+        delay: 0.5, // short delay to show the normal loader
+        ease: 'power2.inOut',
+        onComplete: () => {
+          loader.style.display = 'none';
+        }
+      });
+
+      // 2. Animate hero name letters
+      tl.fromTo(".bounce-letter",
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, stagger: 0.05, ease: "back.out(2)" },
+        "-=0.2"
+      );
+    })();
+    // ===== END LOADER =====
+
+    // 1st Card: Jab tak 3rd card top par na aa jaye, tab tak pinned rahega
+    gsap.to("#work1", {
+      y: -20, 
+      scrollTrigger: {
+        trigger: "#work1",
+        start: "top 130px",
+        endTrigger: "#work3", // 3rd card tak stick rahega
+        end: "top 130px",
+        pin: true,
+        pinSpacing: false,    // Isse layout break nahi hoga
+        scrub: true,  
+      },
+    });
+
+    // 2nd Card: Ye bhi 3rd card ke aane tak pinned rahega
+    gsap.to("#work2", {
+      y : 0,
+      scrollTrigger: {
+        trigger: "#work2",
+        start: "top 130px",
+        endTrigger: "#work3", // 3rd card tak stick rahega
+        end: "top 130px",
+        pin: true,
+        pinSpacing: false,
+        scrub: true,
+      },
+    });
+    gsap.to("#work3", {
+      scrollTrigger: {
+        trigger: "#work3",
+        start: "top 180px",
+        endTrigger: "#work3", // 3rd card tak stick rahega
+        end: "top 160px",
+        pin: true,
+        pinSpacing: false,
+        scrub: true,
+      },
+    });
+
+    // 3rd Card: Normal scroll hoga aur final top positioning par rukega
+    // ===== PAGE LOADER ANIMATION =====
+    (function () {
+      const loader = document.getElementById('loader');
+      if (!loader) return;
+      const tl = gsap.timeline();
+
+      // Split the hero name into span elements for letter-by-letter animation
+      const heroNameEl = document.getElementById("hero-name");
+      if (heroNameEl) {
+          const nameText = heroNameEl.innerText;
+          heroNameEl.innerHTML = "";
+          nameText.split("").forEach(char => {
+            if(char === " ") {
+                heroNameEl.innerHTML += "&nbsp;";
+            } else {
+                const span = document.createElement("span");
+                span.innerText = char;
+                span.className = "bounce-letter";
+                span.style.display = "inline-block";
+                span.style.opacity = "0"; // Start hidden
+                heroNameEl.appendChild(span);
+            }
+          });
+      }
+
+      // 1. Fade out loader ? reveal website
+      tl.to(loader, {
+        opacity: 0,
+        duration: 0.6,
+        delay: 0.5, // short delay to show the normal loader
+        ease: 'power2.inOut',
+        onComplete: () => {
+          loader.style.display = 'none';
+        }
+      });
+
+      // 2. Animate hero name letters
+      if (heroNameEl) {
+          tl.fromTo(".bounce-letter",
+            { y: 50, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.6, stagger: 0.05, ease: "back.out(2)" },
+            "-=0.2"
+          );
+      }
+    })();
+    // ===== MOBILE MENU TOGGLE =====
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const navLinks = document.getElementById('nav-links');
+    if (mobileBtn && navLinks) {
+        mobileBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            // Toggle icon between bars and xmark
+            const icon = mobileBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
+        // ===== BACK TO TOP BUTTON =====
+    const backToTopBtn = document.getElementById("back-to-top");
+    if (backToTopBtn) {
+      backToTopBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+  });
+</script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

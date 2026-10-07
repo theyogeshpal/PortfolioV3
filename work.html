@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work | Yogesh Pal</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      #work-hero {
+        padding: 100px 50px 50px;
+        color: white;
+        font-family: var(--primary-font);
+        text-align: center;
+      }
+      #work-hero h1 {
+        font-size: calc(var(--primary-font-size) - 2rem);
+        margin-bottom: 20px;
+      }
+      #work-hero p {
+        font-size: 20px;
+        color: #9394a7;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      .projects-grid {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 50px;
+        font-family: var(--primary-font);
+      }
+      .project-card {
+        background-color: var(--secondary-color);
+        padding: 40px;
+        border-radius: 30px;
+        box-shadow: inset 5px 5px 5px #282B37, inset -5px -5px 5px #171824, 5px 6px 30px black;
+        border: 1px solid #282B37;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .project-card h3 {
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 15px;
+      }
+      .project-card p {
+        font-size: 1.1rem;
+        color: #d0d2f0;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+      .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 30px;
+      }
+      .tech-stack span {
+        background-color: #242633;
+        border: 1px solid rgb(102, 101, 101);
+        padding: 6px 12px;
+        border-radius: 20px;
+        color: white;
+        font-size: 0.9rem;
+        box-shadow: inset 2px 2px 5px rgb(61, 57, 76),inset -2px -2px 5px rgb(17, 14, 33);
+      }
+      .view-btn {
+        display: inline-block;
+        background-color: #868BE3;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: 600;
+        text-align: center;
+        box-shadow: inset -3px -2px 5px #575e99;
+        transition: all 0.2s ease;
+      }
+      .view-btn:hover {
+        background-color: #a1a5eb;
+        transform: translateY(-2px);
+      }
+      @media (max-width: 992px) {
+        #work-hero { padding: 80px 20px 40px; }
+        #work-hero h1 { font-size: 3rem; }
+        .projects-grid { padding: 20px; gap: 30px; grid-template-columns: 1fr; }
+        .project-card { padding: 30px 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="index.html" style="text-decoration:none;"><img src="./assets/logo.png" alt="logo" /></a>
+      <ul id="nav-links">
+        <li><a href="work.html" style="color: white;">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#experiance">Experience</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a id="talk" href="index.html#contact">
+        <i class="fa-solid fa-comment"></i>
+        Talk
+      </a>
+      <button id="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <section id="work-hero">
+      <h1>My Recent Works</h1>
+      <p>A collection of robust web applications, e-commerce platforms, and custom software systems built to solve real-world problems.</p>
+    </section>
+
+    <section class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div>
+          <h3>SafeDriveTag</h3>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>Tailwind CSS</span>
+            <span>Node.js</span>
+          </div>
+          <p>An e-commerce platform for smart QR emergency contact safety tags.</p>
+        </div>
+        <a href="project-detail.html?id=safedrivetag" class="view-btn">View Project &rarr;</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div>
+          <h3>SyncAttend</h3>
+          <div class="tech-stack">
+            <span>Flutter</span>
+            <span>Node</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
+          <p>A comprehensive Attendance management application mapping location and staff analytics.</p>
+        </div>
+        <a href="project-detail.html?id=syncattend" class="view-btn">View Project &rarr;</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div>
+          <h3>Inaamify WebApp</h3>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>Node</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
+          <p>A complete Software as a Service (SAAS) platform offering enterprise tools.</p>
+        </div>
+        <a href="project-detail.html?id=inaamify" class="view-btn">View Project &rarr;</a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div>
+          <h3>CS Partner</h3>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>Node</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
+          <p>Web Development platform connecting partners seamlessly across business networks.</p>
+        </div>
+        <a href="project-detail.html?id=cspartner" class="view-btn">View Project &rarr;</a>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <div>
+          <h3>Aayansh 360 Services</h3>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>Node</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+          </div>
+          <p>Web Development portal providing end-to-end 360-degree service solutions.</p>
+        </div>
+        <a href="project-detail.html?id=aayansh" class="view-btn">View Project &rarr;</a>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card">
+        <div>
+          <h3>AuraPark</h3>
+          <div class="tech-stack">
+            <span>ASP.NET Core</span>
+            <span>C#</span>
+            <span>MSSQL</span>
+            <span>Bootstrap</span>
+          </div>
+          <p>Parking Management System featuring Website, Admin, and Super Admin dashboards.</p>
+        </div>
+        <a href="project-detail.html?id=aurapark" class="view-btn">View Project &rarr;</a>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div id="footer-top">
+        <div id="footer-left">
+          <span class="footer-label">GET IN TOUCH</span>
+          <a href="mailto:yogeshpal1309@gmail.com" id="footer-email">yogeshpal1309@gmail.com</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">NAVIGATION</span>
+          <ul class="footer-links">
+            <li><a href="work.html">Work</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#" id="back-to-top">Back to top <i class="fa-solid fa-arrow-up" style="margin-left:5px;"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">ELSEWHERE</span>
+          <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/in/theyogeshpal/" target="_blank">LinkedIn &#8599;</a></li>
+            <li><a href="https://github.com/theyogeshpal" target="_blank">GitHub &#8599;</a></li>
+            <li><a href="https://instagram.com/the_yogeshpal" target="_blank">Instagram &#8599;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="footer-bottom">
+        <span>&copy; 2026 Yogesh Pal</span>
+        <span style="color: #6c6d80; font-family: monospace; font-size: 0.85rem;">v3.0</span>
+      </div>
+    </footer>    <!-- Floating Contact Buttons -->
+    <div class="floating-cta">
+      <a href="https://wa.me/917817095043" target="_blank" class="cta-btn whatsapp-cta" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="tel:+917817095043" class="cta-btn call-cta" aria-label="Call">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+    <script>
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const navLinks = document.getElementById('nav-links');
+      if (mobileBtn && navLinks) {
+          mobileBtn.addEventListener('click', () => {
+              navLinks.classList.toggle('active');
+              const icon = mobileBtn.querySelector('i');
+              if (navLinks.classList.contains('active')) {
+                  icon.classList.remove('fa-bars');
+                  icon.classList.add('fa-xmark');
+              } else {
+                  icon.classList.remove('fa-xmark');
+                  icon.classList.add('fa-bars');
+              }
+          });
+      }
+      const backToTopBtn = document.getElementById("back-to-top");
+      if (backToTopBtn) {
+        backToTopBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+

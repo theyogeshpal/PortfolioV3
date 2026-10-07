@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Details | Yogesh Pal</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      #project-hero {
+        padding: 100px 50px 50px;
+        color: white;
+        font-family: var(--primary-font);
+        text-align: center;
+        background-color: #11121B;
+      }
+      #project-title {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        color: white;
+      }
+      #project-stack {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 30px;
+      }
+      #project-stack span {
+        background-color: #242633;
+        border: 1px solid rgb(102, 101, 101);
+        padding: 6px 15px;
+        border-radius: 20px;
+        color: white;
+        font-size: 0.95rem;
+        box-shadow: inset 2px 2px 5px rgb(61, 57, 76),inset -2px -2px 5px rgb(17, 14, 33);
+      }
+      .project-content {
+        padding: 50px;
+        max-width: 900px;
+        margin: 0 auto;
+        color: #d0d2f0;
+        font-family: var(--primary-font);
+        line-height: 1.8;
+        font-size: 1.15rem;
+      }
+      .project-content h2 {
+        color: white;
+        font-size: 2rem;
+        margin: 40px 0 20px 0;
+      }
+      .project-content ul {
+        margin-left: 20px;
+        margin-bottom: 30px;
+      }
+      .project-content ul li {
+        margin-bottom: 10px;
+      }
+      .project-link-btn {
+        display: inline-block;
+        background-color: #868BE3;
+        color: white;
+        text-decoration: none;
+        padding: 15px 35px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        box-shadow: inset -3px -2px 5px #575e99, 0 4px 15px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+        margin-top: 20px;
+      }
+      .project-link-btn:hover {
+        background-color: #a1a5eb;
+        transform: translateY(-2px);
+      }
+      #error-msg {
+        display: none;
+        text-align: center;
+        padding: 100px;
+        color: white;
+        font-size: 2rem;
+      }
+      @media (max-width: 992px) {
+        #project-hero { padding: 80px 20px 40px; }
+        #project-title { font-size: 2.5rem; }
+        .project-content { padding: 20px; font-size: 1.05rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="index.html" style="text-decoration:none;"><img src="./assets/logo.png" alt="logo" /></a>
+      <ul id="nav-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#experiance">Experience</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a id="talk" href="index.html#contact">
+        <i class="fa-solid fa-comment"></i>
+        Talk
+      </a>
+      <button id="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <div id="error-msg">Project not found. <br><br> <a href="work.html" style="color: #868BE3;">Go back to Projects</a></div>
+
+    <div id="project-container">
+      <section id="project-hero">
+        <h1 id="project-title">Loading...</h1>
+        <div id="project-stack"></div>
+      </section>
+
+      <section class="project-content">
+        <h2>About the Project</h2>
+        <p id="project-desc"></p>
+        
+        <h2>Key Features</h2>
+        <ul id="project-features"></ul>
+
+        <div id="project-link-container" style="text-align: center; margin-top: 50px; display: none;">
+          <a href="#" id="project-link" target="_blank" class="project-link-btn">Visit Live Project &rarr;</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-cta">
+      <a href="https://wa.me/917817095043" target="_blank" class="cta-btn whatsapp-cta" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="tel:+917817095043" class="cta-btn call-cta" aria-label="Call">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+
+    <footer id="footer">
+      <div id="footer-top">
+        <div id="footer-left">
+          <span class="footer-label">GET IN TOUCH</span>
+          <a href="mailto:yogeshpal1309@gmail.com" id="footer-email">yogeshpal1309@gmail.com</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">NAVIGATION</span>
+          <ul class="footer-links">
+            <li><a href="work.html">Work</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#" id="back-to-top">Back to top <i class="fa-solid fa-arrow-up" style="margin-left:5px;"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">ELSEWHERE</span>
+          <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/in/theyogeshpal/" target="_blank">LinkedIn &#8599;</a></li>
+            <li><a href="https://github.com/theyogeshpal" target="_blank">GitHub &#8599;</a></li>
+            <li><a href="https://instagram.com/the_yogeshpal" target="_blank">Instagram &#8599;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="footer-bottom">
+        <span>&copy; 2026 Yogesh Pal</span>
+        <span style="color: #6c6d80; font-family: monospace; font-size: 0.85rem;">v3.0</span>
+      </div>
+    </footer>
+    <script src="./js/projectsData.js"></script>
+    <script>
+      // Mobile menu toggle
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const navLinks = document.getElementById('nav-links');
+      if (mobileBtn && navLinks) {
+          mobileBtn.addEventListener('click', () => {
+              navLinks.classList.toggle('active');
+              const icon = mobileBtn.querySelector('i');
+              if (navLinks.classList.contains('active')) {
+                  icon.classList.remove('fa-bars');
+                  icon.classList.add('fa-xmark');
+              } else {
+                  icon.classList.remove('fa-xmark');
+                  icon.classList.add('fa-bars');
+              }
+          });
+      }
+
+      // Back to top
+      const backToTopBtn = document.getElementById("back-to-top");
+      if (backToTopBtn) {
+        backToTopBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+
+      // Load Project Logic
+      document.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+        const project = projects[projectId];
+
+        if (project) {
+          // Populate Title
+          document.getElementById('project-title').textContent = project.title;
+          
+          // Populate Stack
+          const stackContainer = document.getElementById('project-stack');
+          project.stack.forEach(tech => {
+            const span = document.createElement('span');
+            span.textContent = tech;
+            stackContainer.appendChild(span);
+          });
+
+          // Populate Description
+          document.getElementById('project-desc').textContent = project.desc;
+
+          // Populate Features
+          const featuresList = document.getElementById('project-features');
+          project.features.forEach(feature => {
+            const li = document.createElement('li');
+            li.innerHTML = <i class="fa-solid fa-circle-check" style="color: #868BE3; margin-right: 10px;"></i> ;
+            featuresList.appendChild(li);
+          });
+
+          // Link Button
+          if (project.link) {
+            const linkContainer = document.getElementById('project-link-container');
+            const linkBtn = document.getElementById('project-link');
+            linkBtn.href = project.link;
+            linkContainer.style.display = 'block';
+          }
+
+        } else {
+          // Handle Error
+          document.getElementById('project-container').style.display = 'none';
+          document.getElementById('error-msg').style.display = 'block';
+        }
+      });
+    </script>
+  </body>
+</html>
+
+
+
+

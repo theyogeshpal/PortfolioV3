@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Yogesh Pal</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      #services-hero {
+        padding: 100px 50px 50px;
+        color: white;
+        font-family: var(--primary-font);
+        text-align: center;
+      }
+      #services-hero h1 {
+        font-size: calc(var(--primary-font-size) - 2rem);
+        margin-bottom: 20px;
+      }
+      #services-hero p {
+        font-size: 20px;
+        color: #9394a7;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      .services-grid {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        font-family: var(--primary-font);
+      }
+      .service-box {
+        background-color: var(--secondary-color);
+        padding: 50px;
+        border-radius: 30px;
+        box-shadow: inset 5px 5px 5px #282B37, inset -5px -5px 5px #171824, 5px 6px 30px black;
+        border: 1px solid #282B37;
+        transition: transform 0.3s ease;
+      }
+      .service-box:hover {
+        transform: translateY(-5px);
+      }
+      .service-box i {
+        font-size: 2.5rem;
+        color: #868BE3;
+        margin-bottom: 20px;
+      }
+      .service-box h3 {
+        font-size: 1.8rem;
+        color: white;
+        margin-bottom: 15px;
+      }
+      .service-box p {
+        font-size: 1.1rem;
+        color: #d0d2f0;
+        line-height: 1.7;
+      }
+      .pricing-card {
+        transition: transform 0.3s ease;
+      }
+      .pricing-card:hover {
+        transform: translateY(-5px);
+      }
+      @media (max-width: 992px) {
+        #services-hero { padding: 80px 20px 40px; }
+        #services-hero h1 { font-size: 3rem; }
+        .services-grid { padding: 20px; gap: 20px; }
+        .service-box { padding: 30px 20px; }
+        #pricing { padding: 60px 20px !important; }
+        .popular-card { transform: scale(1) !important; margin-top: 20px; margin-bottom: 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="index.html" style="text-decoration:none;"><img src="./assets/logo.png" alt="logo" /></a>
+      <ul id="nav-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html" style="color: white;">Services</a></li>
+        <li><a href="index.html#experiance">Experience</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a id="talk" href="index.html#contact">
+        <i class="fa-solid fa-comment"></i>
+        Talk
+      </a>
+      <button id="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <section id="services-hero">
+      <h1>My Services</h1>
+      <p>A full-stack development agency dedicated to building high-performance, scalable, and user-centric digital products for modern businesses.</p>
+</section>
+
+    <section class="services-grid">
+      <div class="service-box">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>Web Development</h3>
+        <p>I build robust, responsive web applications using React.js, Angular, and .NET Core. From simple landing pages to complex Enterprise software (SAAS) platforms like Inaamify and SyncAttend.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <h3>Mobile Apps</h3>
+        <p>Creating seamless cross-platform mobile experiences connecting seamlessly with scalable backend APIs built in Node.js and Express.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-database"></i>
+        <h3>Backend & Cloud</h3>
+        <p>Designing secure server architectures and Restful APIs using C#, ASP.NET Core MVC, and managing data with MSSQL, MySQL, and MongoDB.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-palette"></i>
+        <h3>UI/UX Design</h3>
+        <p>Bringing ideas to life with modern, clean, and accessible interfaces. Enhancing user interaction with Tailwind CSS, Bootstrap, GSAP, and AOS animations.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>E-Commerce</h3>
+        <p>Building secure and scalable e-commerce platforms like SafeDriveTag, complete with integrated payments, inventory management, and fast SSR interfaces.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-car"></i>
+        <h3>Custom Systems</h3>
+        <p>Developing specialized management solutions like AuraPark (Parking Management System) featuring Web, Admin, and Super Admin panels.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-window-maximize"></i>
+        <h3>Static Websites</h3>
+        <p>Fast, secure, and visually stunning static websites for portfolios, landing pages, and small businesses, optimized for top-tier SEO and instant load times.</p>
+      </div>
+    </section>
+
+    <!-- ===== PRICING SECTION ===== -->
+    <section id="pricing" style="padding: 100px 50px; background-color: #11121B; font-family: var(--primary-font); border-top: 1px solid #282B37;">
+      <div style="text-align: center; margin-bottom: 60px;">
+        <h2 style="font-size: 3rem; color: white; margin-bottom: 20px;">Clear & Transparent Pricing</h2>
+        <p style="font-size: 1.1rem; color: #9394a7; max-width: 600px; margin: 0 auto;">Choose a plan that best fits your business requirements. No hidden charges, just pure value.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto;">
+        
+        <!-- Basic -->
+        <div class="pricing-card" style="background-color: var(--secondary-color); padding: 40px; border-radius: 30px; box-shadow: inset 5px 5px 5px #282B37, inset -5px -5px 5px #171824; border: 1px solid #282B37; display: flex; flex-direction: column;">
+          <h3 style="font-size: 1.8rem; color: white; margin-bottom: 10px;">Basic</h3>
+          <p style="color: #9394a7; margin-bottom: 20px;">Static Websites (Frontend Only)</p>
+          <div style="font-size: 2.5rem; color: #868BE3; font-weight: bold; margin-bottom: 30px;">&#8377;499<span style="font-size: 1rem; color: #6c6d80; font-weight: normal;"> /page</span></div>
+          <ul style="list-style: none; padding: 0; margin-bottom: 40px; flex-grow: 1;">
+            <li style="margin-bottom: 15px; color: #d0d2f0;"><i class="fa-solid fa-check" style="color: #868BE3; margin-right: 10px;"></i> 5 to 10 Pages Website</li>
+            <li style="margin-bottom: 15px; color: #d0d2f0;"><i class="fa-solid fa-check" style="color: #868BE3; margin-right: 10px;"></i> Fully Responsive UI</li>
+            <li style="margin-bottom: 15px; color: #d0d2f0;"><i class="fa-solid fa-check" style="color: #868BE3; margin-right: 10px;"></i> Contact Form Integration</li>
+            <li style="margin-bottom: 15px; color: #d0d2f0;"><i class="fa-solid fa-check" style="color: #868BE3; margin-right: 10px;"></i> Fast Load Times & Basic SEO</li>
+          </ul>
+          <button class="get-started-btn" data-plan="Basic" style="width:100%; display: block; text-align: center; background-color: #242633; color: white; border: none; cursor:pointer; padding: 15px; border-radius: 20px; font-weight: 600; border: 1px solid rgb(102, 101, 101); box-shadow: inset 2px 2px 5px rgb(61, 57, 76),inset -2px -2px 5px rgb(17, 14, 33); transition: all 0.2s ease; font-family: var(--primary-font); font-size:1rem;">Get Started</button>
+        </div>
+
+        <!-- Moderate -->
+        <div class="pricing-card popular-card" style="background-color: var(--secondary-color); padding: 40px; border-radius: 30px; box-shadow: inset 5px 5px 5px #282B37, inset -5px -5px 5px #171824, 0 10px 40px rgba(134,139,227,0.15); border: 1px solid #868BE3; display: flex; flex-direction: column; transform: scale(1.05); position: relative; z-index: 2;">
+          <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: #868BE3; color: white; padding: 5px 20px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; letter-spacing: 1px;">POPULAR</div>
+          <h3 style="font-size: 1.8rem; color: white; margin-bottom: 10px;">Moderate</h3>
+          <p style="color: #9394a7; margin-bottom: 20px;">Dynamic Website + 1 Admin Panel</p>
+          <div style="font-size: 2.5rem; color: #868BE3; font-weight: bold; margin-bottom: 30px;">&#8377;7,999+<span style="font-size: 1rem; color: #6c6d80; font-weight: normal;"> /project</span></div>
+          <ul style="list-style: none; padding: 0; margin-bottom: 40px; flex-grow: 1;">
+            <li style="margin-bottom: 15px; color: #d0d2f0;"><i class="fa-solid fa-check" style="color: #868BE3; margin-right: 10px;"></i> Frontend: &#8377;499 / page</li>
+            <li style="margin-bottom: 15px; color: #d0d2f0;"><i class="fa-solid fa-check" style="color: #868BE3; margin-right: 10px;"></i> 1 Admin Panel (Cost based on features)</li>
+            <li style="margin-bottom: 15px; color: #d0d2f0;"><i class="fa-solid fa-check" style="color: #868BE3; margin-right: 10px;"></i> Backend API Integration</li>
+            <li style="margin-bottom: 15px; color: #d0d2f0;"><i class="fa-solid fa-check" style="color: #868BE3; margin-right: 10px;"></i> Database Management</li>
+          </ul>
+          <button class="get-started-btn" data-plan="Moderate" style="width:100%; display: block; text-align: center; background-color: #868BE3; color: white; border: none; cursor:pointer; padding: 15px; border-radius: 20px; font-weight: 600; box-shadow: inset -3px -2px 5px #575e99; transition: all 0.2s ease; font-family: var(--primary-font); font-size:1rem;">Get Started</button>
+        </div>
+
+        <!-- Custom -->
+        <div class="pricing-card" style="background-color: var(--secondary-color); padding: 40px; border-radius: 30px; box-shadow: inset 5px 5px 5px #282B37, inset -5px -5px 5px #171824; border: 1px solid #282B37; display: flex; flex-direction: column;">
+          <h3 style="font-size: 1.8rem; color: white; margin-bottom: 10px;">Custom</h3>
+          <p style="color: #9394a7; margin-bottom: 20px;">Complex SAAS / Enterprise Apps</p>
+          <div style="font-size: 2.5rem; color: #868BE3; font-weight: bold; margin-bottom: 30px;">Let's Talk<span style="font-size: 1rem; color: #6c6d80; font-weight: normal;"></span></div>
+          <ul style="list-style: none; padding: 0; margin-bottom: 40px; flex-grow: 1;">
+            <li style="margin-bottom: 15px; color: #d0d2f0;"><i class="fa-solid fa-check" style="color: #868BE3; margin-right: 10px;"></i> Full Stack Custom Dev</li>
+            <li style="margin-bottom: 15px; color: #d0d2f0;"><i class="fa-solid fa-check" style="color: #868BE3; margin-right: 10px;"></i> Multiple User Roles & Panels</li>
+            <li style="margin-bottom: 15px; color: #d0d2f0;"><i class="fa-solid fa-check" style="color: #868BE3; margin-right: 10px;"></i> Payment Gateways & APIs</li>
+            <li style="margin-bottom: 15px; color: #d0d2f0;"><i class="fa-solid fa-check" style="color: #868BE3; margin-right: 10px;"></i> Ongoing Support & Scaling</li>
+          </ul>
+          <button class="get-started-btn" data-plan="Custom" style="width:100%; display: block; text-align: center; background-color: #242633; color: white; border: none; cursor:pointer; padding: 15px; border-radius: 20px; font-weight: 600; border: 1px solid rgb(102, 101, 101); box-shadow: inset 2px 2px 5px rgb(61, 57, 76),inset -2px -2px 5px rgb(17, 14, 33); transition: all 0.2s ease; font-family: var(--primary-font); font-size:1rem;">Contact Now</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="services-cta" style="padding: 100px 50px; text-align: center; background-color: #11121B; border-top: 1px solid #282B37;">
+      <h2 style="font-size: 3rem; color: white; margin-bottom: 20px; font-family: var(--primary-font);">Ready to build something great?</h2>
+      <p style="font-size: 1.2rem; color: #9394a7; max-width: 600px; margin: 0 auto 40px auto; font-family: var(--primary-font); line-height: 1.6;">Whether you need a lightning-fast static website or a complex enterprise web application, I'm here to help turn your vision into reality.</p>
+      <a href="index.html#contact" style="display: inline-block; background-color: #868BE3; color: white; text-decoration: none; padding: 15px 40px; border-radius: 30px; font-weight: 600; font-size: 1.1rem; font-family: var(--primary-font); box-shadow: inset -3px -2px 5px #575e99, 5px 6px 30px black; transition: all 0.3s ease;">Let's Talk About Your Project &rarr;</a>
+    </section>
+
+    <!-- Pricing Modal -->
+    <div id="pricing-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h2 style="color: white; margin-bottom: 10px;">Get Started</h2>
+        <p style="color: #9394a7; margin-bottom: 25px; font-size: 0.95rem;">Please fill out the details below. I will contact you shortly.</p>
+        
+                        <form action="https://formsubmit.co/yogeshpal1309@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Service Request from Portfolio">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://theyogeshpal.in/services.html">
+          <input type="hidden" name="Selected_Plan" id="modal-plan-input" value="">
+          <div style="margin-bottom: 20px; text-align: left;">
+            <label style="color: #9394a7; display: block; margin-bottom: 5px; font-size: 0.9rem;">Selected Plan</label>
+            <input type="text" id="modal-plan-display" disabled class="modal-input" style="color: #868BE3; font-weight: bold;">
+          </div>
+
+          <div style="margin-bottom: 20px; text-align: left;">
+            <label style="color: #9394a7; display: block; margin-bottom: 5px; font-size: 0.9rem;">Your Name</label>
+            <input type="text" name="Name" required placeholder="Enter your name" class="modal-input">
+          </div>
+
+          <div style="margin-bottom: 30px; text-align: left;">
+            <label style="color: #9394a7; display: block; margin-bottom: 5px; font-size: 0.9rem;">Mobile Number</label>
+            <input type="tel" name="Mobile" required placeholder="Enter your mobile number" class="modal-input">
+          </div>
+
+          <button type="submit" style="width: 100%; background-color: #868BE3; color: white; padding: 15px; border-radius: 20px; font-weight: 600; border: none; cursor: pointer; box-shadow: inset -3px -2px 5px #575e99; font-family: var(--primary-font); font-size: 1rem; transition: background-color 0.3s ease;">Submit Request</button>
+        </form>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div id="footer-top">
+        <div id="footer-left">
+          <span class="footer-label">GET IN TOUCH</span>
+          <a href="mailto:yogeshpal1309@gmail.com" id="footer-email">yogeshpal1309@gmail.com</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">NAVIGATION</span>
+          <ul class="footer-links">
+            <li><a href="work.html">Work</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#" id="back-to-top">Back to top <i class="fa-solid fa-arrow-up" style="margin-left:5px;"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">ELSEWHERE</span>
+          <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/in/theyogeshpal/" target="_blank">LinkedIn &#8599;</a></li>
+            <li><a href="https://github.com/theyogeshpal" target="_blank">GitHub &#8599;</a></li>
+            <li><a href="https://instagram.com/the_yogeshpal" target="_blank">Instagram &#8599;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="footer-bottom">
+        <span>&copy; 2026 Yogesh Pal</span>
+        <span style="color: #6c6d80; font-family: monospace; font-size: 0.85rem;">v3.0</span>
+      </div>
+    </footer>    <!-- Floating Contact Buttons -->
+    <div class="floating-cta">
+      <a href="https://wa.me/917817095043" target="_blank" class="cta-btn whatsapp-cta" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="tel:+917817095043" class="cta-btn call-cta" aria-label="Call">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+    <script>
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const navLinks = document.getElementById('nav-links');
+      if (mobileBtn && navLinks) {
+          mobileBtn.addEventListener('click', () => {
+              navLinks.classList.toggle('active');
+              const icon = mobileBtn.querySelector('i');
+              if (navLinks.classList.contains('active')) {
+                  icon.classList.remove('fa-bars');
+                  icon.classList.add('fa-xmark');
+              } else {
+                  icon.classList.remove('fa-xmark');
+                  icon.classList.add('fa-bars');
+              }
+          });
+      }
+      const backToTopBtn = document.getElementById("back-to-top");
+      if (backToTopBtn) {
+        backToTopBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+      // Modal Logic
+      const modal = document.getElementById("pricing-modal");
+      const closeBtn = document.querySelector(".modal-close");
+      const planInput = document.getElementById("modal-plan-input");
+      const planDisplay = document.getElementById("modal-plan-display");
+      const getStartedBtns = document.querySelectorAll(".get-started-btn");
+
+      if (modal && getStartedBtns.length > 0) {
+        getStartedBtns.forEach(btn => {
+          btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            const plan = btn.getAttribute("data-plan");
+            planInput.value = plan;
+            planDisplay.value = plan + " Plan";
+            modal.style.display = "flex";
+          });
+        });
+
+        closeBtn.addEventListener("click", () => {
+          modal.style.display = "none";
+        });
+
+        window.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

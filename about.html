@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Yogesh Pal</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      #about-hero {
+        padding: 100px 50px 50px;
+        color: white;
+        font-family: var(--primary-font);
+        text-align: center;
+      }
+      #about-hero h1 {
+        font-size: calc(var(--primary-font-size) - 2rem);
+        margin-bottom: 20px;
+      }
+      #about-hero p {
+        font-size: 20px;
+        color: #9394a7;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      .about-detail-section {
+        padding: 50px;
+        color: white;
+        font-family: var(--primary-font);
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+      }
+      .about-block {
+        display: flex;
+        gap: 50px;
+        background-color: var(--secondary-color);
+        padding: 50px;
+        border-radius: 30px;
+        box-shadow: inset 5px 5px 5px #282B37, inset -5px -5px 5px #171824, 5px 6px 30px black;
+        border: 1px solid #282B37;
+      }
+      .about-block-left {
+        width: 35%;
+      }
+      .about-block-left h2 {
+        font-size: 2.5rem;
+        color: #868BE3;
+      }
+      .about-block-right {
+        width: 65%;
+      }
+      .about-block-right p {
+        font-size: 1.1rem;
+        color: #d0d2f0;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+      .about-block-right ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+      }
+      .about-block-right ul li {
+        background-color: #242633;
+        border: 1px solid rgb(102, 101, 101);
+        padding: 9px 15px;
+        border-radius: 35px;
+        box-shadow: inset 2px 2px 5px rgb(61, 57, 76),inset -2px -2px 5px rgb(17, 14, 33);
+        color: white;
+      }
+      
+      @media (max-width: 992px) {
+        #about-hero { padding: 80px 20px 40px; }
+        #about-hero h1 { font-size: 3rem; }
+        .about-detail-section { padding: 20px; }
+        .about-block { flex-direction: column; padding: 30px 20px; gap: 20px; }
+        .about-block-left, .about-block-right { width: 100%; }
+        .about-block-left h2 { font-size: 2rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+            <nav id="navbar">
+      <a href="index.html" style="text-decoration:none;"><img src="./assets/logo.png" alt="logo" /></a>
+      <ul id="nav-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#experiance">Experience</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <a id="talk" href="index.html#contact">
+        <i class="fa-solid fa-comment"></i>
+        Talk
+      </a>
+      <button id="mobile-menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- About Hero -->
+    <section id="about-hero">
+      <h1>My Journey</h1>
+      <p>A deeper look into who I am, how I got here, and what drives my passion for software engineering.</p>
+    </section>
+
+    <section class="about-detail-section">
+      <!-- Background -->
+      <div class="about-block">
+        <div class="about-block-left">
+          <h2>Background</h2>
+        </div>
+        <div class="about-block-right">
+          <p>
+            As a Computer Science and Engineering (CSE) student, my journey into technology started with a deep curiosity about how things work behind the screens. Over time, that curiosity evolved into a professional passion for Full-Stack Development.
+          </p>
+          <p>
+            I've always believed that great software sits at the intersection of beautiful design and rock-solid architecture. That's why I've dedicated myself to mastering both frontend experiences and backend infrastructure.
+          </p>
+        </div>
+      </div>
+
+      <!-- Experience Detail -->
+      <div class="about-block">
+        <div class="about-block-left">
+          <h2>The Journey</h2>
+        </div>
+        <div class="about-block-right">
+          <p>
+            My professional career kicked off at <strong>Digicoders Technologies Pvt. Ltd. (Lucknow)</strong>, where I rapidly progressed from a .NET Developer to a Full Stack Engineer. Earning the "Star Performance" honor was a significant milestone that validated my dedication to delivering high-quality web products.
+          </p>
+          <p>
+            I am highly focused on building scalable APIs, optimizing SQL databases (MSSQL & MySQL), and rendering smooth, SEO-friendly React interfaces. My technical toolkit is further enhanced by advanced animation libraries like GSAP and AOS.
+          </p>
+        </div>
+      </div>
+
+      <!-- Strengths -->
+      <div class="about-block">
+        <div class="about-block-left">
+          <h2>Strengths</h2>
+        </div>
+        <div class="about-block-right">
+          <ul style="display: flex; flex-direction: column; gap: 15px; margin-top: 0;">
+            <li style="border-radius: 15px;"><i class="fa-solid fa-brain" style="color: #868BE3; margin-right: 10px;"></i> Logical and Analytical ability for new projects and applications</li>
+            <li style="border-radius: 15px;"><i class="fa-solid fa-microphone" style="color: #868BE3; margin-right: 10px;"></i> Public Speaking and Presentation Skills</li>
+            <li style="border-radius: 15px;"><i class="fa-solid fa-bolt" style="color: #868BE3; margin-right: 10px;"></i> Quick learner, always eager to stay up-to-date with IT industry trends</li>
+            <li style="border-radius: 15px;"><i class="fa-solid fa-comments" style="color: #868BE3; margin-right: 10px;"></i> Good verbal and communication skills</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="about-block">
+        <div class="about-block-left">
+          <h2>Education</h2>
+        </div>
+        <div class="about-block-right">
+          <div style="margin-bottom: 30px; background-color: #1A1C29; padding: 25px; border-radius: 20px; border: 1px solid #282B37;">
+            <h3 style="font-size: 1.4rem; color: white; margin-bottom: 5px;">Polytechnic Diploma in CSE</h3>
+            <p style="color: #868BE3; font-weight: 600; margin-bottom: 15px; font-family: var(--navbar-font);">BTEUP <span style="color: #6c6d80; margin-left: 10px;">Currently pursuing</span></p>
+            <p style="margin-bottom: 0;">Focusing on software development, programming, and modern web technologies.</p>
+          </div>
+          <div style="margin-bottom: 30px; background-color: #1A1C29; padding: 25px; border-radius: 20px; border: 1px solid #282B37;">
+            <h3 style="font-size: 1.4rem; color: white; margin-bottom: 5px;">Intermediate (Science)</h3>
+            <p style="color: #868BE3; font-weight: 600; margin-bottom: 15px; font-family: var(--navbar-font);">NIOS Board</p>
+            <p style="margin-bottom: 0;">Completed education with a focus on the Science stream.</p>
+          </div>
+          <div style="background-color: #1A1C29; padding: 25px; border-radius: 20px; border: 1px solid #282B37;">
+            <h3 style="font-size: 1.4rem; color: white; margin-bottom: 5px;">High School</h3>
+            <p style="color: #868BE3; font-weight: 600; margin-bottom: 15px; font-family: var(--navbar-font);">CBSE Board</p>
+            <p style="margin-bottom: 0;">Completed with excellent academic performance.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Training & Certifications -->
+      <div class="about-block">
+        <div class="about-block-left">
+          <h2>Training & Certs</h2>
+        </div>
+        <div class="about-block-right">
+          <div style="margin-bottom: 30px; padding-left: 20px; border-left: 2px solid #868BE3;">
+            <h3 style="font-size: 1.3rem; color: white; margin-bottom: 5px;">Summer Training (45 Days)</h3>
+            <p style="color: #868BE3; font-weight: 600; margin-bottom: 10px; font-family: var(--navbar-font);">Digicoders Technologies Pvt. Ltd. <span style="color: #6c6d80; margin-left: 10px;">2025</span></p>
+            <p style="margin-bottom: 0;">Completed intensive training specializing in Dot Net Core development and earned the "Star Performance Award".</p>
+          </div>
+          <div style="margin-bottom: 30px; padding-left: 20px; border-left: 2px solid #868BE3;">
+            <h3 style="font-size: 1.3rem; color: white; margin-bottom: 5px;">Advanced Diploma in IT</h3>
+            <p style="color: #868BE3; font-weight: 600; margin-bottom: 10px; font-family: var(--navbar-font);">Institute of Computer Education <span style="color: #6c6d80; margin-left: 10px;">2023</span></p>
+            <p style="margin-bottom: 0;">Successfully completed 15 months Advanced diploma in Information Technology, gaining deep knowledge in software development and IT infrastructure.</p>
+          </div>
+          <div style="padding-left: 20px; border-left: 2px solid #868BE3;">
+            <h3 style="font-size: 1.3rem; color: white; margin-bottom: 5px;">Li-Fi & Wi-Fi Workshop</h3>
+            <p style="color: #868BE3; font-weight: 600; margin-bottom: 10px; font-family: var(--navbar-font);">Institute of Computer Education, Bareilly <span style="color: #6c6d80; margin-left: 10px;">2023</span></p>
+            <p style="margin-bottom: 0;">Received Certificate of Appreciation in Li-Fi & Wi-Fi Workshop organized by the Institute.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Detail -->
+      <div class="about-block">
+        <div class="about-block-left">
+          <h2>Arsenal</h2>
+        </div>
+        <div class="about-block-right">
+          <p>
+            I continuously expand my technical toolkit to ensure I can tackle any problem with the right technology.
+          </p>
+          <ul>
+            <li>React.js</li>
+            <li>Angular</li>
+            <li>Node.js / Express</li>
+            <li>ASP.NET Core</li>
+            <li>TypeScript</li>
+            <li>MSSQL & MySQL</li>
+            <li>MongoDB</li>
+            <li>Tailwind CSS</li>
+            <li>GSAP Animations</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div id="footer-top">
+        <div id="footer-left">
+          <span class="footer-label">GET IN TOUCH</span>
+          <a href="mailto:theyogeshpal@gmail.com" id="footer-email">theyogeshpal@gmail.com</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">NAVIGATION</span>
+          <ul class="footer-links">
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#" id="back-to-top">Back to top <i class="fa-solid fa-arrow-up" style="margin-left:5px;"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <span class="footer-label">ELSEWHERE</span>
+          <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/in/theyogeshpal/" target="_blank">LinkedIn &#8599;</a></li>
+            <li><a href="https://github.com/theyogeshpal" target="_blank">GitHub &#8599;</a></li>
+            <li><a href="https://instagram.com/the_yogeshpal" target="_blank">Instagram &#8599;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="footer-bottom">
+        <span>&copy; 2026 Yogesh Pal</span>
+        <span style="color: #6c6d80; font-family: monospace; font-size: 0.85rem;">v3.0</span>
+      </div>
+    </footer>    <!-- Floating Contact Buttons -->
+    <div class="floating-cta">
+      <a href="https://wa.me/917817095043" target="_blank" class="cta-btn whatsapp-cta" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="tel:+917817095043" class="cta-btn call-cta" aria-label="Call">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+    <script>
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const navLinks = document.getElementById('nav-links');
+      if (mobileBtn && navLinks) {
+          mobileBtn.addEventListener('click', () => {
+              navLinks.classList.toggle('active');
+              const icon = mobileBtn.querySelector('i');
+              if (navLinks.classList.contains('active')) {
+                  icon.classList.remove('fa-bars');
+                  icon.classList.add('fa-xmark');
+              } else {
+                  icon.classList.remove('fa-xmark');
+                  icon.classList.add('fa-bars');
+              }
+          });
+      }
+      const backToTopBtn = document.getElementById("back-to-top");
+      if (backToTopBtn) {
+        backToTopBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
