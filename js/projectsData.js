@@ -9,7 +9,7 @@ const projects = {
       "Fully responsive and highly optimized UI for fast loading.",
       "Secure Node.js backend infrastructure."
     ],
-    link: null
+    link: "https://www.safedrivetag.com/"
   },
   "syncattend": {
     title: "SyncAttend",
@@ -50,7 +50,7 @@ const projects = {
   "aayansh": {
     title: "Aayansh 360 Services",
     stack: ["React", "Node", "Express", "MongoDB"],
-    desc: "A unified web development portal providing end-to-end 360-degree service solutions. It acts as a central hub for various interconnected service modules, ensuring clients have a one-stop digital solution.",
+    desc: "A unified Home Decor portal providing end-to-end 360-degree service solutions. It acts as a central hub for various services, ensuring clients have a one-stop digital solution.",
     features: [
       "Modular architecture allowing easy scaling of services.",
       "Interactive and user-friendly frontend dashboard.",

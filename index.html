@@ -50,7 +50,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="shortcut icon" href="./assets/logo.jpeg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
 
     <!-- 6. Theme Color (Mobile browser status bar color) -->
     <meta name="theme-color" content="#0f172a" />
@@ -101,7 +101,7 @@
 
     <!-- navbar -->
                     <nav id="navbar">
-      <a href="index.html" style="text-decoration:none;"><img src="./assets/logo.jpeg" alt="logo" /></a>
+      <a href="index.html" style="text-decoration:none;"><img src="./assets/logo.png" alt="logo" /></a>
       <ul id="nav-links">
         <li><a href="work.html">Work</a></li>
         <li><a href="services.html">Services</a></li>
@@ -152,10 +152,25 @@
               <span>Node.js</span>
             </div>
           </div>
-          <img src="./assets/image.png" />
+          <img src="./assets/safedrivetag.png" />
         </div>
         <!-- proj 2 -->
-                <div id="work2" class="work" onclick="window.location.href='project-detail.html?id=syncattend'" style="cursor: pointer;">
+                        <div id="work2" class="work" onclick="window.location.href='project-detail.html?id=aurapark'" style="cursor: pointer;">
+          <div>
+            <span class="work-heading">SELECTED WORK</span>
+            <h4>AuraPark</h4>
+            <p>
+              Parking Management System featuring Website, Admin, and Super Admin dashboards.
+            </p>
+            <div>
+              <span>ASP.NET Core</span>
+              <span>MSSQL</span>
+            </div>
+          </div>
+          <img src="./assets/aurapark.png" onerror="this.src='./assets/image.png'" />
+        </div>
+        <!-- proj 3 -->
+                <div id="work3" class="work" onclick="window.location.href='project-detail.html?id=syncattend'" style="cursor: pointer;">
           <div>
             <span class="work-heading">SELECTED WORK</span>
             <h4>SyncAttend</h4>
@@ -164,27 +179,10 @@
             </p>
             <div>
               <span>Flutter</span>
-              <span>MongoDB</span>
+              <span>Node.js</span>
             </div>
           </div>
-          <img src="./assets/image.png" />
-        </div>
-        <!-- proj 3 -->
-        <div id="work3" class="work">
-          <div>
-            <span class="work-heading">SELECTED WORK</span>
-            <h4>Evvy</h4>
-            <p>
-              A full-stack event operations platform for managing guest lists,
-              seating, payments, invitations, and on-site check-in in one
-              workflow.
-            </p>
-            <div>
-              <span>Web</span>
-              <span>API</span>
-            </div>
-          </div>
-          <img src="./assets/image.png" />
+          <img src="./assets/syncAttend.jpeg" onerror="this.src='./assets/image.png'" />
         </div>
       </div>
     </div>
@@ -537,6 +535,8 @@
 </script>
   </body>
 </html>
+
+
 
 
 
