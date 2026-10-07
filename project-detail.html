@@ -122,6 +122,7 @@
       </section>
 
       <section class="project-content">
+        <img id="project-detail-image" src="" alt="Project Image" style="width: 100%; height: auto; max-height: 500px; object-fit: cover; border-radius: 20px; border: 1px solid #3d3f54; box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: none; margin-bottom: 40px;" onerror="this.src='./assets/image.png'" />
         <h2>About the Project</h2>
         <p id="project-desc"></p>
         
@@ -210,6 +211,13 @@
         if (project) {
           // Populate Title
           document.getElementById('project-title').textContent = project.title;
+
+          // Populate Image
+          const projectImage = document.getElementById('project-detail-image');
+          if (project.image) {
+            projectImage.src = project.image;
+            projectImage.style.display = 'block';
+          }
           
           // Populate Stack
           const stackContainer = document.getElementById('project-stack');
@@ -247,6 +255,7 @@
     </script>
   </body>
 </html>
+
 
 
 
