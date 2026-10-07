@@ -84,6 +84,14 @@
 
     <!-- 8. CSS Stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var loader = document.getElementById('loader');
+          if(loader) loader.style.display = 'none';
+        }, 1000); // Bulletproof fallback to hide loader after 1s
+      });
+    </script>
   </head>
   <body>
     <!-- Page Loader -->
@@ -411,48 +419,6 @@
   document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // ===== PAGE LOADER ANIMATION =====
-    (function () {
-            const loader = document.getElementById('loader');
-      const tl = gsap.timeline();
-
-      // Split the hero name into span elements for letter-by-letter animation
-      const heroNameEl = document.getElementById("hero-name");
-      const nameText = heroNameEl.innerText;
-      heroNameEl.innerHTML = "";
-      nameText.split("").forEach(char => {
-        if(char === " ") {
-            heroNameEl.innerHTML += "&nbsp;";
-        } else {
-            const span = document.createElement("span");
-            span.innerText = char;
-            span.className = "bounce-letter";
-            span.style.display = "inline-block";
-            span.style.opacity = "0"; // Start hidden
-            heroNameEl.appendChild(span);
-        }
-      });
-
-      // 1. Fade out loader ? reveal website
-      tl.to(loader, {
-        opacity: 0,
-        duration: 0.6,
-        delay: 0.5, // short delay to show the normal loader
-        ease: 'power2.inOut',
-        onComplete: () => {
-          loader.style.display = 'none';
-        }
-      });
-
-      // 2. Animate hero name letters
-      tl.fromTo(".bounce-letter",
-        { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.6, stagger: 0.05, ease: "back.out(2)" },
-        "-=0.2"
-      );
-    })();
-    // ===== END LOADER =====
-
     // 1st Card: Jab tak 3rd card top par na aa jaye, tab tak pinned rahega
     gsap.to("#work1", {
       y: -20, 
@@ -567,6 +533,7 @@
 </script>
   </body>
 </html>
+
 
 
 
