@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Apne sitemap ka poora URL yahan dalein
+Sitemap: https://yourdomain.com/sitemap.xml
