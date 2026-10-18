@@ -14,7 +14,7 @@ const projects = {
   },
   "syncattend": {
     title: "SyncAttend",
-    image: "./assets/syncattend.jpeg",
+    image: "./assets/syncAttend.jpeg",
     stack: ["Flutter", "Node", "Express", "MongoDB"],
     desc: "SyncAttend is a comprehensive attendance and workforce management application designed to map location coordinates and provide actionable staff analytics. It empowers administrators to effortlessly track and manage remote or on-site workforces.",
     features: [
@@ -27,7 +27,7 @@ const projects = {
   },
   "inaamify": {
     title: "Inaamify WebApp",
-    image: "./assets/inaamify.png",
+    image: "./assets/Inaamify.png",
     stack: ["React", "Node", "Express", "MongoDB"],
     desc: "Inaamify is a complete Software as a Service (SAAS) platform offering an array of enterprise tools. It is engineered to scale, featuring complex multi-tenant architecture and a highly interactive, state-driven React frontend.",
     features: [
@@ -40,7 +40,7 @@ const projects = {
   },
   "cspartner": {
     title: "CS Partner",
-    image: "./assets/cspartner.png",
+    image: "./assets/CSPartner.png",
     stack: ["React", "Node", "Express", "MongoDB"],
     desc: "A dedicated B2B web development platform connecting partners seamlessly across expansive business networks. It streamlines communication, project collaboration, and resource sharing.",
     features: [
@@ -66,7 +66,7 @@ const projects = {
   },
   "aurapark": {
     title: "AuraPark",
-    image: "./assets/aurapark.png",
+    image: "./assets/Aurapark.png",
     stack: ["ASP.NET Core", "C#", "MSSQL", "Bootstrap"],
     desc: "AuraPark is an enterprise-grade Parking Management System designed to handle complex parking logistics. The solution features multiple interconnected access layers including a main Website, an Admin dashboard, and a Super Admin dashboard for ultimate control.",
     features: [
