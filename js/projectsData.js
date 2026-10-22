@@ -15,7 +15,7 @@ const projects = {
   "syncattend": {
     title: "SyncAttend",
     image: "./assets/syncAttend.jpeg",
-    stack: ["Flutter", "Node", "Express", "MongoDB"],
+    stack: ["React Native", "Node", "Express", "MongoDB"],
     desc: "SyncAttend is a comprehensive attendance and workforce management application designed to map location coordinates and provide actionable staff analytics. It empowers administrators to effortlessly track and manage remote or on-site workforces.",
     features: [
       "Cross-platform Flutter application for Android and iOS.",
@@ -78,6 +78,69 @@ const projects = {
     link: "https://aurapark-v2.vercel.app/"
   }
   ,
+  "amberarchive": {
+    title: "Amber Archive",
+    image: "./assets/amber-archive.png",
+    stack: ["React", "TailwindCSS"],
+    desc: "Amber Archives is a modern, responsive E-Commerce platform built using React.js. It features a stunning UI crafted with Tailwind CSS, offering a seamless shopping experience with dynamic product rendering and state management.",
+    features: [
+      "Responsive interfaces using TailwindCSS."
+    ],
+    link: "https://aurapark-v2.vercel.app/"
+  }
+  ,
+  "corearchive": {
+    title: "Core Archive",
+    image: "./assets/core-archive.png",
+    stack: ["React", "Express", "MongoDB", "NodeJS"],
+    desc: "Core Archive is a Digital Library system featuring a main website and an integrated Admin Panel. It allows users to browse and borrow digital assets, while administrators can manage the inventory, user access, and system settings efficiently.",
+    features: [
+      "Modular architecture allowing easy scaling of services.",
+      "Interactive and user-friendly frontend dashboard.",
+      "Custom REST API integrations.",
+      "High-performance and SEO-friendly single page application."
+    ],
+    link: "https://core-archive.netlify.app/"
+  },
+  "syntax": {
+    title: "Syntax Academy",
+    image: "./assets/Syntax-academy.png",
+    stack: ["ASP.NET", "C#", "Entity Framework", "MSSQL"],
+    desc: "Syntax Academy is a Student Management System providing a comprehensive solution for educational institutions. With ASP.NET Core and Entity Framework, it handles student records, grading, and attendance tracking with high reliability.",
+    features: [
+      "Multi-role authorization (User, Admin, Super Admin).",
+      "Robust ASP.NET Core MVC architecture.",
+      "Optimized MSSQL database for secure data transactions.",
+      "Responsive interfaces using Bootstrap."
+    ],
+    link: "https://syntax-academy.runasp.net/"
+  },
+  "riskflight": {
+    title: "RiskFlight",
+    image: "./assets/risk-flight.png",
+    stack: ["ASP.NET", "C#", "Entity Framework", "MSSQL"],
+    desc: "RiskFlight is a dedicated Library Management System engineered to streamline book tracking, issuing, and return processes. Leveraging ASP.NET Core and MSSQL, it ensures data integrity and fast search capabilities.",
+    features: [
+      "Multi-role authorization (User, Admin, Super Admin).",
+      "Robust ASP.NET Core MVC architecture.",
+      "Optimized MSSQL database for secure data transactions.",
+      "Responsive interfaces using Bootstrap."
+    ],
+    link: "https://library-vijy.onrender.com/"
+  },
+  "nurture": {
+    title: "Nurture Nest",
+    image: "./assets/nurture.png",
+    stack: ["HTML", "CSS", "JavaScript"],
+    desc: "Nurture Nest is a beautifully designed static website for a Non-Government Organization. It utilizes semantic HTML5, custom CSS3, and vanilla JavaScript to deliver an accessible and engaging platform for donors and volunteers.",
+    features: [
+      "Multi-role authorization (User, Admin, Super Admin).",
+      "Robust ASP.NET Core MVC architecture.",
+      "Optimized MSSQL database for secure data transactions.",
+      "Responsive interfaces using Bootstrap."
+    ],
+    link: "https://nurture-nest-foundation.netlify.app/"
+  },
   "portfolio_v3": {
     title: "Portfolio v3 (Current)",
     image: "./assets/portfolio_v3.png",
