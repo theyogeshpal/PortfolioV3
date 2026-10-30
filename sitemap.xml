@@ -4,33 +4,53 @@
   <!-- Homepage -->
   <url>
     <loc>https://theyogeshpal.in/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>daily</changefreq>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://theyogeshpal.in/services.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Work / Projects Portfolio Page -->
+  <url>
+    <loc>https://theyogeshpal.in/work.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- About Page -->
   <url>
-    <loc>https://theyogeshpal.in/about</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://theyogeshpal.in/about.html</loc>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Services / Products Page -->
+  <!-- Project Detail Pages -->
   <url>
-    <loc>https://theyogeshpal.in/services</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Contact Page -->
-  <url>
-    <loc>https://theyogeshpal.in/contact</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://theyogeshpal.in/project-detail.html?id=safedrivetag</loc>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://theyogeshpal.in/project-detail.html?id=aurapark</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://theyogeshpal.in/project-detail.html?id=syncattend</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

@@ -3,7 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services | Yogesh Pal</title>
+    <!-- Primary SEO Meta Tags -->
+    <title>Web & Mobile App Development Services in Bareilly, Lucknow, Kanpur | Yogesh Pal</title>
+    <meta
+      name="description"
+      content="Professional Web Development, Mobile App Development, and Software Engineering services in Bareilly, Lucknow, Kanpur, and Uttar Pradesh. High-speed websites, React Native apps, ASP.NET Core & React solutions starting at ₹499/page."
+    />
+    <meta
+      name="keywords"
+      content="Web Development Services Bareilly, App Development Services Bareilly, Website Designer in Bareilly, Web Developer in Lucknow, App Developer in Lucknow, Software Development Kanpur, Mobile App Developer Uttar Pradesh, Best Website Development Company Bareilly, Ecommerce Website Bareilly, Static Website ₹499 Bareilly"
+    />
+    <meta name="author" content="Yogesh Pal" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://theyogeshpal.in/services.html" />
+
+    <!-- Geo-Targeting Local SEO -->
+    <meta name="geo.region" content="IN-UP" />
+    <meta name="geo.placename" content="Bareilly, Lucknow, Kanpur, Uttar Pradesh, India" />
+    <meta name="geo.position" content="28.3670;79.4304" />
+    <meta name="ICBM" content="28.3670, 79.4304" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://theyogeshpal.in/services.html" />
+    <meta property="og:title" content="Web & Mobile App Development Services in Bareilly, Lucknow, Kanpur | Yogesh Pal" />
+    <meta property="og:description" content="Affordable & Scalable Web Development, Mobile Apps & Enterprise Software across Uttar Pradesh." />
+    <meta property="og:image" content="https://theyogeshpal.in/assets/og-preview.png" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Web & App Development Services in Bareilly, Lucknow, Kanpur" />
+    <meta name="twitter:description" content="High-speed websites & cross-platform apps starting at ₹499/page. Serving Bareilly, Lucknow, Kanpur & India." />
+    <meta name="twitter:image" content="https://theyogeshpal.in/assets/og-preview.png" />
+
+    <!-- Service Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Web and Mobile App Development",
+      "provider": {
+        "@type": "Person",
+        "name": "Yogesh Pal",
+        "url": "https://theyogeshpal.in/",
+        "telephone": "+917817095043",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bareilly",
+          "addressRegion": "Uttar Pradesh",
+          "addressCountry": "IN"
+        }
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Bareilly" },
+        { "@type": "City", "name": "Lucknow" },
+        { "@type": "City", "name": "Kanpur" },
+        { "@type": "City", "name": "Noida" },
+        { "@type": "State", "name": "Uttar Pradesh" },
+        { "@type": "Country", "name": "India" }
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Static Website Development",
+          "price": "499",
+          "priceCurrency": "INR",
+          "description": "Fast, responsive static websites starting at ₹499 per page."
+        },
+        {
+          "@type": "Offer",
+          "name": "Dynamic Website & Admin Panel",
+          "price": "4999",
+          "priceCurrency": "INR",
+          "description": "Custom dynamic web applications with full-featured backend admin dashboard."
+        }
+      ]
+    }
+    </script>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <meta name="theme-color" content="#0f172a" />
@@ -16,66 +93,188 @@
     <link rel="stylesheet" href="./css/style.css" />
     <style>
       #services-hero {
-        padding: 100px 50px 50px;
+        padding: 90px 40px 40px;
         color: white;
         font-family: var(--primary-font);
         text-align: center;
       }
       #services-hero h1 {
-        font-size: calc(var(--primary-font-size) - 2rem);
-        margin-bottom: 20px;
+        font-size: calc(var(--primary-font-size) - 2.2rem);
+        margin-bottom: 15px;
+        line-height: 1.15;
       }
       #services-hero p {
-        font-size: 20px;
+        font-size: 19px;
         color: #9394a7;
-        max-width: 800px;
+        max-width: 820px;
         margin: 0 auto;
         line-height: 1.6;
       }
+
+      /* Services Grid Layout */
       .services-grid {
-        padding: 50px;
+        padding: 30px 50px 70px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 32px;
+        max-width: 1350px;
+        margin: 0 auto;
         font-family: var(--primary-font);
       }
-      .service-box {
+
+      /* Redesigned Luxury Service Card */
+      .service-card-pro {
         background-color: var(--secondary-color);
-        padding: 50px;
-        border-radius: 30px;
-        box-shadow: inset 5px 5px 5px #282B37, inset -5px -5px 5px #171824, 5px 6px 30px black;
+        padding: 38px 32px;
+        border-radius: 28px;
+        box-shadow: inset 5px 5px 6px #282B37, inset -5px -5px 6px #171824, 0 10px 30px rgba(0, 0, 0, 0.25);
         border: 1px solid #282B37;
-        transition: transform 0.3s ease;
+        transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
       }
-      .service-box:hover {
-        transform: translateY(-5px);
+
+      .service-card-pro:hover {
+        transform: translateY(-8px);
+        border-color: #868BE3;
+        box-shadow: inset 2px 2px 5px #282B37, 0 18px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(134, 139, 227, 0.2);
       }
-      .service-box i {
-        font-size: 2.5rem;
+
+      .service-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+      }
+
+      .service-icon-box {
+        width: 58px;
+        height: 58px;
+        border-radius: 18px;
+        background-color: #242633;
+        border: 1px solid #3d3f54;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.05), inset -2px -2px 4px rgba(0, 0, 0, 0.4);
+      }
+
+      .service-icon-box i {
+        font-size: 1.65rem;
         color: #868BE3;
-        margin-bottom: 20px;
       }
-      .service-box h3 {
-        font-size: 1.8rem;
+
+      .service-category-tag {
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #868BE3;
+        background: rgba(134, 139, 227, 0.1);
+        border: 1px solid rgba(134, 139, 227, 0.25);
+        padding: 5px 13px;
+        border-radius: 20px;
+        font-family: var(--navbar-font);
+      }
+
+      .service-card-pro h3 {
+        font-size: 1.55rem;
         color: white;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
+        line-height: 1.3;
       }
-      .service-box p {
-        font-size: 1.1rem;
+
+      .service-card-pro p {
+        font-size: 0.98rem;
+        color: #9ea0b8;
+        line-height: 1.65;
+        margin-bottom: 22px;
+        flex-grow: 1;
+      }
+
+      .service-deliverables {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 22px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .service-deliverables li {
+        font-size: 0.92rem;
         color: #d0d2f0;
-        line-height: 1.7;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--navbar-font);
       }
+
+      .service-deliverables li i {
+        color: #868BE3;
+        font-size: 0.85rem;
+      }
+
+      .service-tech-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 24px;
+        padding-top: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .service-tech-pill {
+        background: #242633;
+        border: 1px solid #3d394c;
+        color: #d0d2f0;
+        font-size: 0.8rem;
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-family: var(--navbar-font);
+      }
+
+      .service-action-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #242633;
+        color: white;
+        border: 1px solid rgb(102, 101, 101);
+        box-shadow: inset 2px 2px 5px rgb(61, 57, 76), inset -2px -2px 5px rgb(17, 14, 33);
+        padding: 12px 20px;
+        border-radius: 20px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        font-family: var(--primary-font);
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.25s ease;
+      }
+
+      .service-action-btn:hover {
+        background-color: #868BE3;
+        border-color: #868BE3;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(134, 139, 227, 0.35);
+      }
+
       .pricing-card {
         transition: transform 0.3s ease;
       }
       .pricing-card:hover {
         transform: translateY(-5px);
       }
+
       @media (max-width: 992px) {
-        #services-hero { padding: 80px 20px 40px; }
-        #services-hero h1 { font-size: 3rem; }
-        .services-grid { padding: 20px; gap: 20px; }
-        .service-box { padding: 30px 20px; }
+        #services-hero { padding: 80px 20px 30px; }
+        #services-hero h1 { font-size: 2.8rem; }
+        .services-grid { padding: 20px; gap: 20px; grid-template-columns: 1fr; }
+        .service-card-pro { padding: 28px 22px; }
         #pricing { padding: 60px 20px !important; }
         .popular-card { transform: scale(1) !important; margin-top: 20px; margin-bottom: 20px; }
       }
@@ -100,47 +299,201 @@
     </nav>
 
     <section id="services-hero">
-      <h1>My Services</h1>
-      <p>A full-stack development agency dedicated to building high-performance, scalable, and user-centric digital products for modern businesses.</p>
+      <h1>Web &amp; App Development Services</h1>
+      <p style="font-size: 1.3rem; color: #868BE3; margin-top: 5px; margin-bottom: 15px; font-weight: 600;">Serving Businesses in Bareilly, Lucknow, Kanpur &amp; Across India</p>
+      <p>A full-stack development agency dedicated to building high-performance, scalable, and user-centric digital products. From ₹499/page static websites to complex enterprise SAAS platforms, get top Google search rankings and exceptional UI/UX.</p>
 </section>
 
     <section class="services-grid">
-      <div class="service-box">
-        <i class="fa-solid fa-laptop-code"></i>
-        <h3>Web Development</h3>
-        <p>I build robust, responsive web applications using React.js, Angular, and .NET Core. From simple landing pages to complex Enterprise software (SAAS) platforms like Inaamify and SyncAttend.</p>
+      
+      <!-- Service 1: Custom Web Development -->
+      <div class="service-card-pro">
+        <div class="service-card-header">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <span class="service-category-tag">Web Development</span>
+        </div>
+        <h3>Custom Web Applications (MERN &amp; .NET)</h3>
+        <p>Full-stack, conversion-focused web applications built with clean architecture. From dynamic single-page applications to high-traffic business portals with instant load times.</p>
+        <ul class="service-deliverables">
+          <li><i class="fa-solid fa-circle-check"></i> React.js &amp; Angular Single Page Applications (SPA)</li>
+          <li><i class="fa-solid fa-circle-check"></i> Server-Side Rendering (SSR) &amp; 95+ Core Web Vitals</li>
+          <li><i class="fa-solid fa-circle-check"></i> Robust REST APIs &amp; Complex State Management</li>
+        </ul>
+        <div class="service-tech-tags">
+          <span class="service-tech-pill">React.js</span>
+          <span class="service-tech-pill">Angular</span>
+          <span class="service-tech-pill">.NET Core</span>
+          <span class="service-tech-pill">Node.js</span>
+          <span class="service-tech-pill">TypeScript</span>
+        </div>
+        <button class="service-action-btn get-started-btn" data-plan="Custom Web App">
+          <span>Request Web Solution</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
-      <div class="service-box">
-        <i class="fa-solid fa-mobile-screen-button"></i>
-        <h3>Mobile Apps</h3>
-        <p>Creating seamless cross-platform mobile experiences connecting seamlessly with scalable backend APIs built in Node.js and Express.</p>
+
+      <!-- Service 2: Cross-Platform Mobile Apps -->
+      <div class="service-card-pro">
+        <div class="service-card-header">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <span class="service-category-tag">Mobile Apps</span>
+        </div>
+        <h3>Mobile Apps (React Native)</h3>
+        <p>High-performance cross-platform mobile applications delivering 60 FPS fluid interactions, offline sync, real-time location mapping, and native device hardware integrations.</p>
+        <ul class="service-deliverables">
+          <li><i class="fa-solid fa-circle-check"></i> Single Codebase for Both Android &amp; iOS Deployment</li>
+          <li><i class="fa-solid fa-circle-check"></i> Real-Time GPS Tracking &amp; Push Notifications</li>
+          <li><i class="fa-solid fa-circle-check"></i> Payment Gateways &amp; Offline Data Synchronization</li>
+        </ul>
+        <div class="service-tech-tags">
+          <span class="service-tech-pill">React Native</span>
+          <span class="service-tech-pill">Express.js</span>
+          <span class="service-tech-pill">Firebase</span>
+          <span class="service-tech-pill">REST APIs</span>
+        </div>
+        <button class="service-action-btn get-started-btn" data-plan="Mobile App">
+          <span>Request Mobile App</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
-      <div class="service-box">
-        <i class="fa-solid fa-database"></i>
-        <h3>Backend & Cloud</h3>
-        <p>Designing secure server architectures and Restful APIs using C#, ASP.NET Core MVC, and managing data with MSSQL, MySQL, and MongoDB.</p>
+
+      <!-- Service 3: Backend, Cloud & APIs -->
+      <div class="service-card-pro">
+        <div class="service-card-header">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-server"></i>
+          </div>
+          <span class="service-category-tag">Backend &amp; Cloud</span>
+        </div>
+        <h3>Enterprise Backend &amp; RESTful APIs</h3>
+        <p>Rock-solid server infrastructure, microservices, and secure API architectures engineered for high concurrency, low latency, and zero-downtime reliability.</p>
+        <ul class="service-deliverables">
+          <li><i class="fa-solid fa-circle-check"></i> High-Throughput RESTful APIs in C# &amp; Node.js</li>
+          <li><i class="fa-solid fa-circle-check"></i> Relational (MSSQL, MySQL) &amp; NoSQL (MongoDB) Scaling</li>
+          <li><i class="fa-solid fa-circle-check"></i> Enterprise Security (JWT, OAuth2, RBAC Authorization)</li>
+        </ul>
+        <div class="service-tech-tags">
+          <span class="service-tech-pill">C#</span>
+          <span class="service-tech-pill">ASP.NET Core</span>
+          <span class="service-tech-pill">Node.js</span>
+          <span class="service-tech-pill">MSSQL</span>
+          <span class="service-tech-pill">MongoDB</span>
+        </div>
+        <button class="service-action-btn get-started-btn" data-plan="Backend Architecture">
+          <span>Request Backend Solution</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
-      <div class="service-box">
-        <i class="fa-solid fa-palette"></i>
-        <h3>UI/UX Design</h3>
-        <p>Bringing ideas to life with modern, clean, and accessible interfaces. Enhancing user interaction with Tailwind CSS, Bootstrap, GSAP, and AOS animations.</p>
+
+      <!-- Service 4: SaaS & Custom Systems -->
+      <div class="service-card-pro">
+        <div class="service-card-header">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <span class="service-category-tag">SaaS &amp; Portals</span>
+        </div>
+        <h3>Enterprise SaaS &amp; Custom Systems</h3>
+        <p>Multi-tier enterprise platforms like AuraPark (Parking Management) and SyncAttend (Workforce Analytics) complete with custom Admin, Staff, and Super Admin control dashboards.</p>
+        <ul class="service-deliverables">
+          <li><i class="fa-solid fa-circle-check"></i> Multi-Role Architecture (User, Admin, Super Admin)</li>
+          <li><i class="fa-solid fa-circle-check"></i> Dynamic Analytics, Reporting &amp; Data Visualization</li>
+          <li><i class="fa-solid fa-circle-check"></i> Webhook Automations &amp; Subscription Billing</li>
+        </ul>
+        <div class="service-tech-tags">
+          <span class="service-tech-pill">ASP.NET Core MVC</span>
+          <span class="service-tech-pill">React</span>
+          <span class="service-tech-pill">MSSQL</span>
+          <span class="service-tech-pill">Bootstrap</span>
+          <span class="service-tech-pill">Redis</span>
+        </div>
+        <button class="service-action-btn get-started-btn" data-plan="Enterprise SaaS">
+          <span>Build Custom Platform</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
-      <div class="service-box">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <h3>E-Commerce</h3>
-        <p>Building secure and scalable e-commerce platforms like SafeDriveTag, complete with integrated payments, inventory management, and fast SSR interfaces.</p>
+
+      <!-- Service 5: E-Commerce & Digital Stores -->
+      <div class="service-card-pro">
+        <div class="service-card-header">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <span class="service-category-tag">E-Commerce</span>
+        </div>
+        <h3>Modern E-Commerce &amp; Smart Portals</h3>
+        <p>End-to-end e-commerce solutions complete with dynamic QR generation (SafeDriveTag), automated checkout pipelines, real-time cart flows, and multi-currency payment integration.</p>
+        <ul class="service-deliverables">
+          <li><i class="fa-solid fa-circle-check"></i> Razorpay &amp; Stripe Payment Gateway Integrations</li>
+          <li><i class="fa-solid fa-circle-check"></i> Dynamic QR Code Generation &amp; Security Profiles</li>
+          <li><i class="fa-solid fa-circle-check"></i> Order Processing, Inventory &amp; Live Tracking</li>
+        </ul>
+        <div class="service-tech-tags">
+          <span class="service-tech-pill">React</span>
+          <span class="service-tech-pill">Node.js</span>
+          <span class="service-tech-pill">Razorpay</span>
+          <span class="service-tech-pill">Stripe</span>
+          <span class="service-tech-pill">MongoDB</span>
+        </div>
+        <button class="service-action-btn get-started-btn" data-plan="E-Commerce">
+          <span>Launch E-Commerce Store</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
-      <div class="service-box">
-        <i class="fa-solid fa-car"></i>
-        <h3>Custom Systems</h3>
-        <p>Developing specialized management solutions like AuraPark (Parking Management System) featuring Web, Admin, and Super Admin panels.</p>
+
+      <!-- Service 6: Static Websites -->
+      <div class="service-card-pro">
+        <div class="service-card-header">
+          <div class="service-icon-box">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <span class="service-category-tag">Budget &amp; Speed</span>
+        </div>
+        <h3>Ultra-Fast Static Websites (from ₹499/page)</h3>
+        <p>Affordable, visually striking, and ultra-fast static websites for clinics, lawyers, schools, and local businesses in Bareilly, Lucknow, and UP. Zero server costs with 95+ PageSpeed.</p>
+        <ul class="service-deliverables">
+          <li><i class="fa-solid fa-circle-check"></i> 5 to 10 Pages Fully Responsive Layout</li>
+          <li><i class="fa-solid fa-circle-check"></i> 100/100 Google Core Web Vitals &amp; Local SEO</li>
+          <li><i class="fa-solid fa-circle-check"></i> Contact Form Integration (Web3Forms to Inbox)</li>
+        </ul>
+        <div class="service-tech-tags">
+          <span class="service-tech-pill">HTML5</span>
+          <span class="service-tech-pill">CSS3</span>
+          <span class="service-tech-pill">JavaScript</span>
+          <span class="service-tech-pill">Local SEO</span>
+          <span class="service-tech-pill">Web3Forms</span>
+        </div>
+        <button class="service-action-btn get-started-btn" data-plan="Basic">
+          <span>Start at ₹499/page</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
-      <div class="service-box">
-        <i class="fa-solid fa-window-maximize"></i>
-        <h3>Static Websites</h3>
-        <p>Fast, secure, and visually stunning static websites for portfolios, landing pages, and small businesses, optimized for top-tier SEO and instant load times.</p>
-      </div>
+
     </section>
+
+    
+    <!-- Local SEO City Coverage Banner -->
+    <div style="background-color: #1A1C29; margin: 0 50px 30px; padding: 25px 35px; border-radius: 25px; border: 1px solid #282B37; text-align: center;">
+      <h3 style="color: white; font-size: 1.3rem; margin-bottom: 12px; font-family: var(--primary-font);">
+        <i class="fa-solid fa-map-location-dot" style="color: #868BE3; margin-right: 8px;"></i>
+        Available for On-Site &amp; Remote Projects in Major Cities:
+      </h3>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; font-family: var(--navbar-font);">
+        <span style="background: #242633; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; color: #d0d2f0; border: 1px solid #3d394c;">Bareilly</span>
+        <span style="background: #242633; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; color: #d0d2f0; border: 1px solid #3d394c;">Lucknow</span>
+        <span style="background: #242633; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; color: #d0d2f0; border: 1px solid #3d394c;">Kanpur</span>
+        <span style="background: #242633; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; color: #d0d2f0; border: 1px solid #3d394c;">Noida &amp; Greater Noida</span>
+        <span style="background: #242633; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; color: #d0d2f0; border: 1px solid #3d394c;">Ghaziabad</span>
+        <span style="background: #242633; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; color: #d0d2f0; border: 1px solid #3d394c;">Agra</span>
+        <span style="background: #242633; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; color: #d0d2f0; border: 1px solid #3d394c;">Varanasi</span>
+        <span style="background: #242633; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; color: #d0d2f0; border: 1px solid #3d394c;">Delhi NCR</span>
+        <span style="background: #242633; padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; color: #868BE3; border: 1px solid #868BE3;">Pan-India &amp; Global</span>
+      </div>
+    </div>
 
     <!-- ===== PRICING SECTION ===== -->
     <section id="pricing" style="padding: 100px 50px; background-color: #11121B; font-family: var(--primary-font); border-top: 1px solid #282B37;">

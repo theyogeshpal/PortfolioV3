@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# Apne sitemap ka poora URL yahan dalein
-Sitemap: https://yourdomain.com/sitemap.xml
+# XML Sitemap for search engines
+Sitemap: https://theyogeshpal.in/sitemap.xml

@@ -18,7 +18,7 @@ const projects = {
     stack: ["React Native", "Node", "Express", "MongoDB"],
     desc: "SyncAttend is a comprehensive attendance and workforce management application designed to map location coordinates and provide actionable staff analytics. It empowers administrators to effortlessly track and manage remote or on-site workforces.",
     features: [
-      "Cross-platform Flutter application for Android and iOS.",
+      "Cross-platform React Native application for Android and iOS.",
       "Real-time geolocation tracking and mapping integration.",
       "Scalable NoSQL MongoDB architecture for high data volume.",
       "Advanced analytics dashboard for admin reporting."

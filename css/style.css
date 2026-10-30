@@ -72,9 +72,15 @@ nav a:hover{
 }
 
 #talk:hover {
-    border: 1px solid rgb(94, 94, 184);
+    background-color: #868BE3;
+    border-color: #868BE3;
+    color: white !important;
     transform: translateY(-2px);
-    background-color: var(--primary-color);
+    box-shadow: inset -2px -2px 4px #575e99, 0 6px 20px rgba(134, 139, 227, 0.45);
+}
+
+#talk:hover i {
+    color: white !important;
 }
 
 /* hero */
@@ -85,7 +91,7 @@ nav a:hover{
     display : flex;
 }
 
-#hero div {
+#hero > div {
     height: 80vh;
     width: 50%;
 }
@@ -825,7 +831,7 @@ hr {
         text-align: left;
         min-height: auto;
     }
-    #hero div {
+    #hero > div {
         height: auto;
         width: 100%;
     }
@@ -965,5 +971,189 @@ hr {
 
 
 
+
+
+
+/* ========================================================
+   HERO BUTTONS (UNIFIED, BALANCED & MODERN)
+======================================================== */
+.hero-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    width: auto !important;
+    height: auto !important;
+    flex-wrap: nowrap !important;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 14.5px;
+    font-weight: 600;
+    font-family: var(--navbar-font);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-sizing: border-box;
+    white-space: nowrap !important;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.hero-btn-primary {
+    background-color: #868BE3;
+    color: white;
+    border: 1px solid #868BE3;
+    box-shadow: inset -2px -2px 5px #575e99, 0 6px 20px rgba(134, 139, 227, 0.3);
+}
+
+.hero-btn-primary:hover {
+    background-color: #9aa0f5;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: inset -2px -2px 5px #575e99, 0 10px 25px rgba(134, 139, 227, 0.45);
+}
+
+.hero-btn-secondary {
+    background-color: #1A1C29;
+    color: #e2e4f0;
+    border: 1px solid #3d3f54;
+    box-shadow: inset 2px 2px 5px #282B37, inset -2px -2px 5px #141520;
+}
+
+.hero-btn-secondary:hover {
+    background-color: #242637;
+    color: white;
+    border-color: #868BE3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================================
+   FAQ ACCORDION (PREMIUM NEUMORPHIC DESIGN)
+======================================================== */
+.faq-accordion {
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.faq-item {
+    background-color: var(--secondary-color);
+    border: 1px solid #282B37;
+    border-radius: 20px;
+    box-shadow: inset 4px 4px 6px #282B37, inset -4px -4px 6px #151622, 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: #3e4256;
+    transform: translateY(-2px);
+}
+
+.faq-item[open] {
+    border-color: #868BE3;
+    box-shadow: inset 2px 2px 5px #282B37, 0 8px 25px rgba(134, 139, 227, 0.15);
+}
+
+.faq-summary {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #f1f2f9;
+    padding: 22px 28px;
+    outline: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s ease;
+}
+
+.faq-summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-summary:hover {
+    color: #868BE3;
+}
+
+.faq-icon-wrapper {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #242633;
+    border: 1px solid #3d3f54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-left: 15px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-icon-wrapper i {
+    font-size: 0.85rem;
+    color: #868BE3;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item[open] .faq-icon-wrapper {
+    background-color: #868BE3;
+    border-color: #868BE3;
+}
+
+.faq-item[open] .faq-icon-wrapper i {
+    color: white;
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 28px 24px 28px;
+    color: #a4a6bd;
+    font-size: 1rem;
+    line-height: 1.75;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 18px;
+    animation: faqFadeIn 0.3s ease;
+}
+
+.faq-answer strong {
+    color: #ffffff;
+}
+
+@keyframes faqFadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Service Card Hover Polish */
+.service-card-new {
+    background-color: var(--secondary-color);
+    padding: 35px 30px;
+    border-radius: 25px;
+    border: 1px solid #282B37;
+    box-shadow: inset 5px 5px 6px #282B37, inset -5px -5px 6px #171824;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card-new:hover {
+    transform: translateY(-6px);
+    border-color: #868BE3;
+    box-shadow: inset 2px 2px 5px #282B37, 0 12px 30px rgba(0, 0, 0, 0.4);
+}
 
 
